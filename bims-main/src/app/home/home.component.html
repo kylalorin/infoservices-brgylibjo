@@ -1,0 +1,10 @@
+<ng-template [ngxPermissionsOnly]="['ROLE_RESIDENT']">
+  <app-slider-announcement></app-slider-announcement>
+  <app-about-libjo></app-about-libjo>
+  <app-organization-chart></app-organization-chart>
+  <app-sitio [sitios]="sitios"></app-sitio>
+</ng-template>
+<ng-template [ngxPermissionsOnly]="['ROLE_ADMIN', 'ROLE_OFFICIAL']">
+  <app-quick-menu></app-quick-menu>
+</ng-template>
+

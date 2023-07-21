@@ -1,0 +1,31 @@
+<div>
+  <h2 class="text-4xl text-center font-bold tracking-tight text-gray-900 mb-12">
+    {{ today | date : "MMMM d, y" }}
+  </h2>
+  <form>
+    <div class="mb-4 ">
+      <p class="font-bold mb-4 text-center text-lg">
+        Question: Who would be participating for a singing contest this coming
+        fiesta, May 26??
+      </p>
+      <div class="flex items-center mt-2 justify-center text-lg">
+        <label class="inline-flex items-center">
+          <input type="radio" class="form-radio" name="color" value="a"/>
+          <span class="ml-2 ">a. I will participate</span>
+        </label>
+        <label class="inline-flex items-center ml-6">
+          <input type="radio" class="form-radio" name="color" value="b" />
+          <span class="ml-2">b. I will not participate</span>
+        </label>
+      </div>
+    </div>
+    <div class="flex justify-center mt-10">
+      <button
+      type="submit"
+      class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+    >
+      Submit Response
+    </button>
+    </div>
+  </form>
+</div>

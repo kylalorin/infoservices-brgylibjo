@@ -1,0 +1,45 @@
+<div class="container mx-auto py-8">
+  <div class="max-w-sm mx-auto bg-white overflow-hidden">
+    <div class="p-4">
+      <div class="flex items-center justify-center">
+        <div class="mb-4 text-center">
+          <img
+            class="h-40 w-40 rounded-full"
+            src="./assets/default.png"
+            alt="Profile Picture"
+          />
+          <button
+            class="mt-4 bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded"
+          >
+            Change Photo
+          </button>
+        </div>
+      </div>
+      <div class="text-center">
+        <h2 class="ml-4 text-xl font-semibold">{{ user.name }}</h2>
+        <p class="mt-2 text-gray-600">009-004</p>
+      </div>
+    </div>
+  </div>
+
+  <div
+    class="mt-8 max-w-lg mx-auto bg-white shadow-md rounded-md overflow-hidden"
+  >
+    <h3 class="px-4 py-3 bg-gray-200 font-semibold">Transaction History</h3>
+    <ul class="divide-y divide-gray-200">
+      <li class="px-4 py-3">
+        <div class="flex items-center justify-between">
+          <p class="font-semibold">Certificate of Indigency</p>
+          <p class="text-gray-600">April 1, 2023</p>
+        </div>
+      </li>
+      <li class="px-4 py-3">
+        <div class="flex items-center justify-between">
+          <p class="font-semibold">Barangay Clearance</p>
+          <p class="text-gray-600">April 28, 2023</p>
+        </div>
+      </li>
+      <!-- Add more transaction items as needed -->
+    </ul>
+  </div>
+</div>
